@@ -9,40 +9,40 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
  
-app.post('/usuario', function (req, res) {
+// app.post('/usuario', function (req, res) {
 
-    let body = req.body;
+//     let body = req.body;
 
-    if(body.nombre === undefined){
-        res.status(400).json({
-            ok: false,
-            mensaje:"El nombre es necesario"
-        })
-    }else{
-        res.json(body)
-    }
+//     if(body.nombre === undefined){
+//         res.status(400).json({
+//             ok: false,
+//             mensaje:"El nombre es necesario"
+//         })
+//     }else{
+//         res.json(body)
+//     }
 
 
   
-})
+// })
  
 
 app.get('/usuario', function (req, res) {
     res.json('get usuarios')
   })
 
-  app.put('/usuario/:id', function (req, res) {
+//   app.put('/usuario/:id', function (req, res) {
 
-    let id= req.params.id;
+//     let id= req.params.id;
 
-    res.json({
-        id
-    })
-  })
+//     res.json({
+//         id
+//     })
+//   })
 
-  app.delete('/usuario', function (req, res) {
-    res.json('Eliminar usuarios')
-  })
+//   app.delete('/usuario', function (req, res) {
+//     res.json('Eliminar usuarios')
+//   })
 
 
 
