@@ -41,7 +41,7 @@ app.get('/usuario', function (req, res) {
   })
 
   app.delete('/usuario', function (req, res) {
-    res.json('delete usuarios')
+    res.json('Eliminar usuarios')
   })
 
 
