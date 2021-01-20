@@ -46,6 +46,6 @@ app.get('/usuario', function (req, res) {
 
 
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log("Escuchando el puerto", process.env.PORT)
 })
